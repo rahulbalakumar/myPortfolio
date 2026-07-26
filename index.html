@@ -1,14 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class = "scroll-smooth">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rahul Balakumar | Electronics Engineering Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/myPortfolio/assets/index-4GZ9WE0z.js"></script>
-    <link rel="stylesheet" crossorigin href="/myPortfolio/assets/index-CYmA7pZG.css">
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul</title>
+    <link href="./dist/output.css" rel="stylesheet">
   </head>
-  <body class="bg-white text-black">
-    <div id="root"></div>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-slate-950">
+
+    <nav class="fixed top-0 left-0 right-0 bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+      <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+        <span class="font-bold tracking-tight text-lg">Rahul Balakumar</span>
+        <div class="hidden md:flex space-x-6 text-sm text-slate-300">
+          
+          <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+          <a href="#ongoing" class="hover:text-sky-400 transition-colors">Ongoing</a>
+          <a href="#contact" class="hover:text-sky-400 transition-colors">Contact me</a>
+          
+        </div>
+        <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+
+          </svg>
+        </button>
+      </div>
+      <div id="menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+        <a href="#projects" class="block text-slate-300 hover:text-sky-400 mobile-link">Projects</a>
+        <a href="#ongoing" class="block text-slate-300 hover:text-sky-400 mobile-link">Ongoing</a>
+        <a href="#contact" class="block text-slate-300 hover:text-sky-400 mobile-link">Contact me</a>
+      </div>
+    </nav>
+
+
+    <header class="text-center py-32 px-6 border-b border-slate-800">
+      <div class="max-w-2xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-2">Rahul Balakumar</h1>
+        <p class ="text-sky-400 font-semibold text-lg mb-4">Electronics Undergraduate</p>
+        <p class ="text-sky-400 font-semibold text-lg mb-4">Department of Electronic and Telecommunication Engineering, University of Moratuwa.</p>
+        <p class="text-slate-400 mb-8 leading-realxed">Passionate about Digital Systems, RF and Analog Electronics.</p>
+        <a href="#terminal-section" class="inline-block bg-sky-400 text-slate-950 font-semibold px-6 py-3 rounded-lg hover:bg-sky-300 transition-colors">Try Terminal</a>
+      </div>
+    </header>
+  
+  <!-- Education & Background Section -->
+    <section id="education" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-10 border-l-4 border-sky-400 pl-3">Education</h2>
+        
+        <div class="border-l border-slate-800 ml-3 pl-6 space-y-10">
+            <!-- University Milestone -->
+            <div class="relative">
+                <!-- Dot marker on the timeline line -->
+                <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-sky-400 rounded-full border-4 border-slate-950"></div>
+                
+                <span class="text-xs font-mono text-sky-400">Present</span>
+                <h3 class="text-xl font-semibold mt-1">B.Sc. Engineering Undergraduate</h3>
+                <p class="text-slate-300 font-medium">Department of Electronic & Telecommunication Engineering (ENTC)</p>
+                <p class="text-slate-500 text-sm">University of Moratuwa, Sri Lanka</p>
+                <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                    Specializing in core analog electronics, embedded systems, RF and digital systems.
+                </p>
+            </div>
+
+            <!-- School Studies Milestone -->
+            <div class="relative">
+                <!-- Dot marker on the timeline line -->
+                <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-slate-700 rounded-full border-4 border-slate-950"></div>
+                
+                <span class="text-xs font-mono text-slate-500">2009 to 2022 (Graduated)</span>
+                <h3 class="text-xl font-semibold mt-1">G.C.E Advanced Level</h3>
+                <p class="text-slate-300 font-medium">T/R.K.M Sri Koneswara Hindu College (Mathematics, Physics, Chemistry, General English)</p>
+                <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                    4As / 89th in the country / z-score of 2.69
+                </p>
+            </div>
+        </div>
+    </section>  
+  
+  <!-- Terminal -->
+  <section id="terminal-section" class="max-w-3xl mx-auto px-6 py-20">
+    <h2 class="text-2xl font-bold mb-4 border-l-4 border-sky-400 pl-3">Terminal</h2>
+    <p class="text-slate-400 text-sm mb-6">Try typing <code class="text-sky-400 bg-slate-900 px-1.5 py-0.5 rounded">help</code> to see what's available</p>
+
+    <div class="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden shadow-2xl font-mono text-sm">
+      <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center space-x-2">
+        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+        <span class="text-xs text-slate-500 ml-2">rahul@portfolio:~</span>
+      </div>
+      <div id="terminal-body" class="p-4 h-80 overflow-y-auto space-y-3 text-slate-300">
+        <div>Welcome to my interactive CLI</div>
+        <div>Type <span class="text-sky-400">help</span> to view a list of available commands.</div>
+      </div>  
+
+      <form id="terminal-form" class="bg-slate-950 px-4 py-3 border-t border-slate-800 flex items-center">
+        <span class="text-sky-400 mr-2">visitor@portfolio:~</span>
+        <input id="terminal-input" type="text" autocomplete="off" autofocus class="bg-transparent text-slate-100 focus:outline-none w-full">
+      </form>
+    </div>
+  </section> 
+
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-800">
+    <h2 class="text-2xl font-bold mb-8 border-l-4 border-sky-400 pl-3">My Projects</h2>
+    <div class="grid grid-cols-1 md:gird-cols-2 gap-6">
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">300W Pure Sine Wave Inverter</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Designed a custom pure sine wave inverter from scratch using EG8010 chip using 2 seperate 2-layer PCBs, with custom metal enclosure.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Altium Designer</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">LTSpice</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SOLIDWORKS</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Power Electronics</span>
+          
+        </div>
+        <a href="https://github.com/rahulbalakumar/Pure-Sine-Wave-Inverter" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Automatic Analog Solar Tracker</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Purely made out of analog electronic components without utilizing any digital components with PID controller, built on a 3-layer PCB with custom enclosure.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Altium Designer</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">LTSpice</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SOLIDWORKS</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Analog Electronics</span>
+        </div> 
+        <a href="https://github.com/rahulbalakumar/Analog-Solar-Tracker" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+ 
+      </div>
+
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Class D High Efficiency Audio Amplifier</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">A high efficiency Class D Audio amplifier featuring tone controller, high frequency PWM stage and a custom gate driving stage.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Altium Designer</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">LTSpice</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Analog Electronics</span>
+        </div> 
+        <a href="https://github.com/rahulbalakumar/class-d-audio-amplifier" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+ 
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">FPGA UART Transceiver with AXI4-Stream </h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Implemented a UART transceiver on an Altera Cyclone IV FPGA featuring
+8x oversampling for noise immunity and frame/overrun error detection.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Verilog</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Quartus Prime</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">FPGA</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">ModelSim</span>
+        </div>
+        <a href="https://github.com/rahulbalakumar/fpga-uart-verilog" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+  
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Two-Way Digital Paging System</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Implemented a 2-way digital modulated (QPSK) paging system using 2 bladeRFs with Acknowledgement mechanism (Stop-and-Wait).</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">GNU Radio</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">BladeRF</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">RF Electronics</span>
+        </div>  
+      </div>
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Train-Animal Collisions Prevention Device</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Developed a fully functional prototype utilizing microwave and PIR sensors to detect animals on railway tracks and alerting nearby incoming trains on time to prevent collision. Prototype entirely made on PCB with custom 3D printed enclosure.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Altium Designer</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">C++</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SOLIDWORKS</span>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+  <!-- Ongoing Projects Section -->
+    <section id="ongoing" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-8 border-l-4 border-yellow-500 pl-3">Ongoing Projects</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Ongoing Project Card 1 -->
+            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-xl font-semibold">Smart Digital Power Analyzer</h3>
+                    <span class="bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-4 leading-relaxed">Designing an embedded power analyzer with an isolated Analog Front-End
+(AFE) and real-time DSP firmware.</p>
+                
+                <!-- Cool Progress Bar -->
+                <div class="mb-6">
+                    <div class="flex justify-between text-xs text-slate-500 mb-1">
+                        <span>Circuit Designing</span>
+                        <span>10%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-1.5">
+                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 10%"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">Power Electronics</span>
+                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">Embedded Systems</span>
+                </div>
+                
+                
+            </div>
+            <!-- Ongoing Project Card 2 -->
+            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-xl font-semibold">16 Bit Single Bus CPU Design</h3>
+                    <span class="bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-4 leading-relaxed">Designing and verifying a single-bus CPU in SystemVerilog featuring a custom datapath, ALU, register file, and FSM control unit.</p>
+                
+                <!-- Cool Progress Bar -->
+                <div class="mb-6">
+                    <div class="flex justify-between text-xs text-slate-500 mb-1">
+                        <span>Writing Testbench</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-1.5">
+                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">System Verilog</span>
+                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">Digital System Design</span>
+                </div>
+                
+                
+            </div>
+            <!-- Ongoing Project Card 2 (Empty template for later) -->
+            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all flex flex-col justify-center items-center text-center">
+                <svg class="w-8 h-8 text-slate-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                </svg>
+                <h3 class="text-lg font-semibold text-slate-500">Next Big Thing</h3>
+                <p class="text-slate-600 text-sm mt-1">Brainstorming new hardware architecture...</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-2xl mx-auto px-6 py-20 border-t border-slate-800 text-center">
+        <h2 class="text-2xl font-bold mb-4 border-l-4 border-sky-400 pl-3 inline-block">Say Hi!</h2>
+        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+            Interested in collaborating, discussing electronics and exploring new challenges? Feel free to drop me a message.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <!-- Email Button -->
+            <a href="mailto:rahulbalakumar61@gmail.com" class="w-full sm:w-auto bg-sky-400 text-slate-950 font-semibold px-6 py-3 rounded-lg hover:bg-sky-300 transition-colors">
+                Email Me
+            </a>
+            
+            <!-- GitHub Profile Button -->
+            <a href="https://github.com/rahulbalakumar" target="_blank" class="w-full sm:w-auto border border-slate-700 text-slate-300 font-semibold px-6 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+                GitHub Profile &rarr;
+            </a>
+        </div>
+    </section>
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link')
+
+    btn.addEventListener('click',() => menu.classList.toggle('hidden'));
+    mobileLinks.forEach(link => link.addEventListener('click', () => menu.classList.add('hidden')));
+  
+    
+    const terminalForm = document.getElementById('terminal-form');
+    const terminalInput = document.getElementById('terminal-input');
+    const terminalBody = document.getElementById('terminal-body');
+
+    const commands = {
+      help: "Available commands: <span class='text-sky-400'>bio</span>, <span class='text-sky-400'>projects</span>, <span class='text-sky-400'>skills</span>, <span class='text-sky-400'>clear</span>, <span class='text-sky-400'>sudo</span>",
+      bio: "Electronics Undergradute from Department of Electronic and Telecommunication Engineering, University of Moratuwa, passionate about Digital Systems, RF and Analog Electronics.",
+      projects: "1. 300W Pure Sine Wave Inverter (Altium Designer, LTSpice). \n 2. Automatic Analog Solar Tracker (Altium Designer, LTSpice) \n 3. High Efficiency Class D Audio Amplifier \n 4. UART on an Altera Cyclone IV FPGA \n 5. Two-Way Digital Paging System using 2 bladeRFs. \n 6. Train-Animal Collision prevention device.",
+      skills: "Languages: Python, C++, SystemVerilog, C, MATLAB\nTools: Altium Designer, LTSpice, SOLIDWORKS, Quartus Prime, ModelSim",
+      sudo: "Permission denied"
+
+    };
+
+    terminalForm.addEventListener('submit', (e) =>{
+      e.preventDefault();
+      const userInput = terminalInput.value.trim().toLowerCase();
+      if (userInput == '') return;
+
+      const userLine = document.createElement('div');
+      userLine.innerHTML = `<span class="text-sky-400">visitor@portfolio:~$</span> ${userInput.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")}`;
+      terminalBody.appendChild(userLine);
+
+      const responseLine = document.createElement('div');
+      responseLine.className = "text-slate-400 whitespace-per-line";
+
+      if(userInput == 'clear'){
+        terminalBody.innerHTML = '';
+
+      } else if (commands[userInput]){
+        responseLine.innerHTML = commands[userInput];
+        terminalBody.appendChild(responseLine);
+      } else {
+        responseLine.innerHTML = `command not found: ${userInput}. Type <span class='text-sky-400'>help</span> for options.`;
+        terminalBody.appendChild(responseLine);
+      }
+
+      terminalInput.value = '';
+      terminalBody.scrollTop = terminalBody.scrollHeight;
+    })
+    </script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
   </body>
 </html>
