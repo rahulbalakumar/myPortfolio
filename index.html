@@ -139,6 +139,18 @@
         <a href="https://github.com/rahulbalakumar/Single-Bus-Architecture-CPU" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
 
       </div>
+
+      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
+        <h3 class="text-xl font-semibold mb-2">Systolic Array Matrix Multiplier — Arithmetic IP</h3>
+        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Part of an ongoing Arithmetic IP collection: a parametrized, synthesizable NxN systolic array in SystemVerilog, verified end-to-end at N=3 with a hand-computed matrix product sanity check.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Arithmetic IP</span>
+          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">RTL Design</span>
+        </div>
+        <a href="https://github.com/rahulbalakumar/Arithmetic-IPs" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+
+      </div>
     </div>
   </section>
   <!-- PCB & Hardware Design Gallery Section -->
@@ -294,27 +306,55 @@
                     <h3 class="text-xl font-semibold">CNN Accelerator with RISC-V SoC Integration</h3>
                     <span class="bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
                 </div>
-                <p class="text-slate-400 text-sm mb-4 leading-relaxed">Designing a CNN Accelerator in SystemVerilog to integrate with a RISC-V SoC using an FPGA.</p>
+                <p class="text-slate-400 text-sm mb-4 leading-relaxed">3-member team project: FPGA-based CNN inference accelerator integrated as a memory-mapped peripheral with a RISC-V soft-core. Own the Dataflow & Memory pillar (line buffers, sliding window, padding).</p>
                 
                 <!-- Cool Progress Bar -->
                 <div class="mb-6">
                     <div class="flex justify-between text-xs text-slate-500 mb-1">
-                        <span>Designing...</span>
-                        <span>5%</span>
+                        <span>Core components built &amp; verified</span>
+                        <span>25%</span>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-1.5">
-                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 5%"></div>
+                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 25%"></div>
                     </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">System Verilog</span>
+                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
                     <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">Digital System Design</span>
                 </div>
                 
                 
             </div>
-            <!-- Ongoing Project Card 2 (Empty template for later) -->
+
+            <!-- Ongoing Project Card 3 -->
+            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-xl font-semibold">RISC-V RV32I Single-Cycle CPU</h3>
+                    <span class="bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-4 leading-relaxed">Building a single-cycle RV32I base-ISA CPU in SystemVerilog module by module, each with its own self-checking testbench. PC, Instruction Memory, Register File, Immediate Generator, Control Unit, ALU Control, ALU, Operand Mux and Branch Unit (PC control) are complete and verified.</p>
+                
+                <!-- Cool Progress Bar -->
+                <div class="mb-6">
+                    <div class="flex justify-between text-xs text-slate-500 mb-1">
+                        <span>Building Data Memory next</span>
+                        <span>~80%</span>
+                    </div>
+                    <div class="w-full bg-slate-800 rounded-full h-1.5">
+                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
+                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">CPU Design</span>
+                </div>
+                
+                
+            </div>
+
+            <!-- Ongoing Project Card 4 (Empty template for later) -->
             <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all flex flex-col justify-center items-center text-center">
                 <svg class="w-8 h-8 text-slate-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
