@@ -1,426 +1,523 @@
 <!DOCTYPE html>
-<html lang="en" class = "scroll-smooth">
-  <head>
-    <meta charset = "UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul</title>
-    <link href="./dist/output.css" rel="stylesheet">
-  </head>
-<body class="bg-slate-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(56,189,248,0.08),rgba(255,255,255,0))] text-slate-100 min-h-screen selection:bg-sky-500 selection:text-slate-950">      <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span class="font-bold tracking-tight text-lg">Rahul Balakumar</span>
-        <div class="hidden md:flex space-x-6 text-sm text-slate-300">
-          
-          <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
-          <a href="blog.html" class="hover:text-indigo-400">Blog</a>
-          <a href="#pcb-designs" class="hover:text-sky-400 transition-colors">PCBs</a>
-          <a href="#contact" class="hover:text-sky-400 transition-colors">Contact me</a>
-          
-        </div>
-        <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Balakumar | Digital IC Design &amp; Verification</title>
+  <meta name="description" content="Rahul Balakumar: digital IC design and verification. SystemVerilog RTL, testbenches, RISC-V and accelerator design, with a growing interest in analog IC design.">
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-sky-500 selection:text-slate-950">
 
-          </svg>
-        </button>
+  <!-- Faint die grid behind the top of the page -->
+  <div class="die-grid pointer-events-none absolute inset-x-0 top-0 h-[720px] -z-10" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="sticky top-0 z-40 bg-slate-950/80 backdrop-blur border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#top" class="font-bold tracking-tight text-lg">Rahul Balakumar</a>
+      <div class="hidden md:flex items-center space-x-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+        <a href="#hardware" class="hover:text-sky-400 transition-colors">Hardware</a>
+        <a href="#contact" class="border border-sky-400/50 text-sky-400 px-3 py-1.5 rounded-md hover:bg-sky-400/10 transition-colors">Contact</a>
       </div>
-      <div id="menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
-        <a href="#projects" class="block text-slate-300 hover:text-sky-400 mobile-link">Projects</a>
-        <a href="#ongoing" class="block text-slate-300 hover:text-sky-400 mobile-link">Ongoing</a>
-        <a href="#contact" class="block text-slate-300 hover:text-sky-400 mobile-link">Contact me</a>
-      </div>
-    </nav>
-
-
-  <!-- Added pt-24 (padding-top) to push the content down away from the sticky bar, while keeping py-16 at the bottom -->
-<header class="text-center pt-24 pb-16 px-6 border-b border-slate-800">
-    <div class="max-w-2xl mx-auto">
-        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3">Rahul Balakumar</h1>
-        <p class="text-sky-400 font-semibold text-base mb-1">Electronics Undergraduate</p>
-        <p class="text-slate-300 text-sm font-medium mb-4">Department of Electronic and Telecommunication Engineering, University of Moratuwa</p>
-        <p class="text-slate-400 text-sm max-w-lg mx-auto leading-relaxed">Passionate about PCB Designing, Digital Systems and Electronics.</p>
+      <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none" aria-label="Open menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
     </div>
-</header>
-  
-  <!-- Education & Background Section -->
-    <section id="education" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-800">
-        <h2 class="text-2xl font-bold mb-10 border-l-4 border-sky-400 pl-3">Education</h2>
-        
-        <div class="border-l border-slate-800 ml-3 pl-6 space-y-10">
-            <!-- University Milestone -->
-            <div class="relative">
-                <!-- Dot marker on the timeline line -->
-                <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-sky-400 rounded-full border-4 border-slate-950"></div>
-                
-                <span class="text-xs font-mono text-sky-400">Present</span>
-                <h3 class="text-xl font-semibold mt-1">B.Sc. Engineering Undergraduate</h3>
-                <p class="text-slate-300 font-medium">Department of Electronic & Telecommunication Engineering (ENTC)</p>
-                <p class="text-slate-500 text-sm">University of Moratuwa, Sri Lanka</p>
-                <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-                    Specializing in core analog electronics, embedded systems, RF and digital systems.
-                </p>
-            </div>
+    <div id="menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-6 py-4 space-y-3 text-sm">
+      <a href="#about" class="block text-slate-300 hover:text-sky-400 mobile-link">About</a>
+      <a href="#experience" class="block text-slate-300 hover:text-sky-400 mobile-link">Experience</a>
+      <a href="#projects" class="block text-slate-300 hover:text-sky-400 mobile-link">Projects</a>
+      <a href="#skills" class="block text-slate-300 hover:text-sky-400 mobile-link">Skills</a>
+      <a href="#hardware" class="block text-slate-300 hover:text-sky-400 mobile-link">Hardware</a>
+      <a href="#contact" class="block text-slate-300 hover:text-sky-400 mobile-link">Contact</a>
+    </div>
+  </nav>
 
-            <!-- School Studies Milestone -->
-            <div class="relative">
-                <!-- Dot marker on the timeline line -->
-                <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-slate-700 rounded-full border-4 border-slate-950"></div>
-                
-                <span class="text-xs font-mono text-slate-500">2009 to 2022 (Graduated)</span>
-                <h3 class="text-xl font-semibold mt-1">G.C.E Advanced Level</h3>
-                <p class="text-slate-300 font-medium">T/R.K.M Sri Koneswara Hindu College (Mathematics, Physics, Chemistry, General English)</p>
-                <p class="text-slate-400 text-sm mt-2 leading-relaxed">
-                    4As / 89th in the country / z-score of 2.69
-                </p>
-            </div>
-        </div>
-    </section> 
-  <!-- Projects -->
-  <section id="projects" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-800">
-    <h2 class="text-2xl font-bold mb-8 border-l-4 border-sky-400 pl-3">My Projects</h2>
-    <div class="grid grid-cols-1 md:gird-cols-2 gap-6">
-      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
-        <h3 class="text-xl font-semibold mb-2">300W Pure Sine Wave Inverter</h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Designed a custom pure sine wave inverter from scratch using EG8010 chip using 2 seperate 2-layer PCBs, with custom metal enclosure.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Altium Designer</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">LTSpice</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SOLIDWORKS</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Power Electronics</span>
-          
-        </div>
-        <a href="https://github.com/rahulbalakumar/Pure-Sine-Wave-Inverter" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+  <!-- ============ HERO ============ -->
+  <header id="top" class="relative max-w-5xl mx-auto px-6 pt-20 pb-20 md:pt-28 grid md:grid-cols-[1.2fr_1fr] gap-12 items-center">
+    <div>
+      <p class="font-mono text-xs text-slate-500 mb-4">module rahul_balakumar;</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4">Rahul Balakumar</h1>
+      <p class="text-sky-400 font-semibold text-xl sm:text-2xl mb-3">Digital IC Design &amp; Verification</p>
+      <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6 max-w-md">
+        RTL design in SystemVerilog, testbenches that prove it works, and a growing interest in analog IC design.
+      </p>
+
+      <div class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-3 py-1.5 text-xs text-slate-300 mb-8">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        Engineering Intern, Hardware Acceleration @ LSEG
       </div>
 
-      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
-        <h3 class="text-xl font-semibold mb-2">Automatic Analog Solar Tracker</h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Purely made out of analog electronic components without utilizing any digital components with PID controller, built on a 3-layer PCB with custom enclosure.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Altium Designer</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">LTSpice</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SOLIDWORKS</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Analog Electronics</span>
-        </div> 
-        <a href="https://github.com/rahulbalakumar/Analog-Solar-Tracker" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
- 
-      </div>
-
-      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
-        <h3 class="text-xl font-semibold mb-2">Class D High Efficiency Audio Amplifier</h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">A high efficiency Class D Audio amplifier featuring tone controller, high frequency PWM stage and a custom gate driving stage.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Altium Designer</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">LTSpice</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Analog Electronics</span>
-        </div> 
-        <a href="https://github.com/rahulbalakumar/class-d-audio-amplifier" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
- 
-      </div>
-      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
-        <h3 class="text-xl font-semibold mb-2">FPGA UART Transceiver with AXI4-Stream </h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Implemented a UART transceiver on an Altera Cyclone IV FPGA featuring
-8x oversampling for noise immunity and frame/overrun error detection.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Verilog</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Quartus Prime</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">FPGA</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">ModelSim</span>
-        </div>
-        <a href="https://github.com/rahulbalakumar/fpga-uart-verilog" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
-  
-      </div>
-      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
-        <h3 class="text-xl font-semibold mb-2">16 Bit Single Bus CPU Design</h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Designed and verified a single bus CPU with ADD and LOAD instructions.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Digital System Design</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">CPU Design</span>
-        </div>  
-        <a href="https://github.com/rahulbalakumar/Single-Bus-Architecture-CPU" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
-
-      </div>
-
-      <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1">
-        <h3 class="text-xl font-semibold mb-2">Systolic Array Matrix Multiplier — Arithmetic IP</h3>
-        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Part of an ongoing Arithmetic IP collection: a parametrized, synthesizable NxN systolic array in SystemVerilog, verified end-to-end at N=3 with a hand-computed matrix product sanity check.</p>
-        <div class="flex flex-wrap gap-2 mb-6">
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Arithmetic IP</span>
-          <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">RTL Design</span>
-        </div>
-        <a href="https://github.com/rahulbalakumar/Arithmetic-IPs" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
-
+      <div class="flex flex-wrap gap-3">
+        <a href="#projects" class="bg-sky-400 text-slate-950 font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-sky-300 transition-colors">View Projects</a>
+        <a href="https://github.com/rahulbalakumar" target="_blank" class="border border-slate-700 text-slate-300 font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-slate-800 transition-colors">GitHub &rarr;</a>
+        <a href="https://www.linkedin.com/in/rahul-balakumar19/" target="_blank" class="border border-slate-700 text-slate-300 font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-slate-800 transition-colors">LinkedIn &rarr;</a>
       </div>
     </div>
-  </section>
-  <!-- PCB & Hardware Design Gallery Section -->
-    <section id="pcb-designs" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800">
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold border-l-4 border-sky-400 pl-3 mb-2">My PCB designs</h2>
-            <p class="text-slate-400 text-sm">Custom Multi-Layer PCBs designed on Altium Designer.</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <!-- PCB Item 1 -->
-            <div class="bg-slate-900/50 rounded-xl border border-slate-800 overflow-hidden hover:border-sky-400 transition-all flex flex-col">
-                <!-- Side-by-Side 3D Render & 2D Layout Frame -->
-                <div class="grid grid-cols-2 gap-1 w-full h-56 bg-slate-950">
-                    <div class="overflow-hidden relative group">
-                        <img src="./src/images/solar3D.png" alt="3D Render" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute bottom-2 left-2 bg-slate-950/80 text-[10px] font-mono px-2 py-0.5 rounded text-slate-300">3D Render</span>
-                    </div>
-                    <div class="overflow-hidden relative group">
-                        <img src="./src/images/solar2D.png" alt="2D Layout" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute bottom-2 left-2 bg-slate-950/80 text-[10px] font-mono px-2 py-0.5 rounded text-slate-300">Layout</span>
-                    </div>
-                </div>
 
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-semibold">Analog Solar Tracker</h3>
-                        <span class="bg-sky-400/10 text-sky-400 text-xs font-mono px-2 py-0.5 rounded border border-sky-400/20">4-Layer</span>
-                    </div>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                        A 3-layer PCB consisting of only analog components (OPAMPs and Transistors).
-                    </p>
+    <!-- Timing diagram accent -->
+    <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-5" aria-hidden="true">
+      <div class="flex justify-between font-mono text-[10px] text-slate-500 mb-3">
+        <span>tb_top.wave</span>
+        <span class="text-emerald-400">PASS</span>
+      </div>
+      <svg viewBox="0 0 480 120" class="w-full h-auto font-mono">
+        <text x="0" y="24" class="fill-slate-500" font-size="11">clk</text>
+        <text x="0" y="64" class="fill-slate-500" font-size="11">valid</text>
+        <text x="0" y="104" class="fill-slate-500" font-size="11">data</text>
+        <!-- clk -->
+        <path class="stroke-slate-500" fill="none" stroke-width="1.5" stroke-linejoin="round"
+          d="M60,30 V10 H80 V30 H100 V10 H120 V30 H140 V10 H160 V30 H180 V10 H200 V30 H220 V10 H240 V30 H260 V10 H280 V30 H300 V10 H320 V30 H340 V10 H360 V30 H380 V10 H400 V30 H420 V10 H440 V30 H460 V10 H470"/>
+        <!-- valid -->
+        <path class="stroke-sky-400" fill="none" stroke-width="1.5" stroke-linejoin="round"
+          d="M60,70 H140 V50 H300 V70 H470"/>
+        <!-- data bus -->
+        <path class="stroke-slate-600" fill="none" stroke-width="1.5" d="M60,100 H140 M300,100 H470"/>
+        <g class="stroke-sky-400 fill-sky-400/10" stroke-width="1.5" stroke-linejoin="round">
+          <path d="M140,100 L144,90 H176 L180,100 L176,110 H144 Z"/>
+          <path d="M180,100 L184,90 H216 L220,100 L216,110 H184 Z"/>
+          <path d="M220,100 L224,90 H256 L260,100 L256,110 H224 Z"/>
+          <path d="M260,100 L264,90 H296 L300,100 L296,110 H264 Z"/>
+        </g>
+        <g class="fill-sky-300" font-size="9" text-anchor="middle">
+          <text x="160" y="103">D0</text>
+          <text x="200" y="103">D1</text>
+          <text x="240" y="103">D2</text>
+          <text x="280" y="103">D3</text>
+        </g>
+      </svg>
+    </div>
+  </header>
 
-                    <div class="flex flex-wrap gap-2 mb-6 mt-auto">
-                        <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2.5 py-1 rounded">Altium</span>
-                        <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2.5 py-1 rounded">Analog Electronics</span>
-                    </div>
-
-                    <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 text-sm">
-                        <a href="https://github.com/rahulbalakumar/Analog-Solar-Tracker" target="_blank" class="text-sky-400 font-semibold hover:underline">Schematic &rarr;</a>
-                        <span class="text-slate-500 text-xs">Fabricated</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PCB Item 2 -->
-            <div class="bg-slate-900/50 rounded-xl border border-slate-800 overflow-hidden hover:border-sky-400 transition-all flex flex-col">
-                <div class="grid grid-cols-2 gap-1 w-full h-56 bg-slate-950">
-                    <div class="overflow-hidden relative group">
-                        <img src="./src/images/classd3D.png" alt="3D Render" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute bottom-2 left-2 bg-slate-950/80 text-[10px] font-mono px-2 py-0.5 rounded text-slate-300">3D Render</span>
-                    </div>
-                    <div class="overflow-hidden relative group">
-                        <img src="./src/images/classd2D.png" alt="2D Layout" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute bottom-2 left-2 bg-slate-950/80 text-[10px] font-mono px-2 py-0.5 rounded text-slate-300">Layout</span>
-                    </div>
-                </div>
-
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-semibold">Class D Amplifier</h3>
-                        <span class="bg-yellow-500/10 text-yellow-500 text-xs font-mono px-2 py-0.5 rounded border border-yellow-500/20">2-Layer</span>
-                    </div>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                        Fully functional, class D amplifier with high efficiency made with custom gate driver, PWM generation and tone controller.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6 mt-auto">
-                        <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2.5 py-1 rounded">Altium</span>
-                        <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2.5 py-1 rounded">Analog Electronics</span>
-                    </div>
-
-                    <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 text-sm">
-                        <a href="https://github.com/rahulbalakumar/class-d-audio-amplifier" target="_blank" class="text-sky-400 font-semibold hover:underline">Schematic &rarr;</a>
-                        <span class="text-slate-500 text-xs">Fabrication</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PCB Item 3 -->
-            <div class="bg-slate-900/50 rounded-xl border border-slate-800 overflow-hidden hover:border-sky-400 transition-all flex flex-col">
-                <div class="grid grid-cols-2 gap-1 w-full h-56 bg-slate-950">
-                    <div class="overflow-hidden relative group">
-                        <img src="./src/images/controller3D.png" alt="3D Render" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute bottom-2 left-2 bg-slate-950/80 text-[10px] font-mono px-2 py-0.5 rounded text-slate-300">3D Render</span>
-                    </div>
-                    <div class="overflow-hidden relative group">
-                        <img src="./src/images/controller2D.png" alt="2D Layout" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <span class="absolute bottom-2 left-2 bg-slate-950/80 text-[10px] font-mono px-2 py-0.5 rounded text-slate-300">Layout</span>
-                    </div>
-                </div>
-
-                <div class="p-6 flex flex-col flex-grow">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-semibold">Inverter Controller</h3>
-                        <span class="bg-yellow-500/10 text-yellow-500 text-xs font-mono px-2 py-0.5 rounded border border-yellow-500/20">2-Layer</span>
-                    </div>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                        Controller board of the 300W Pure Sine Wave Inverter consisting of EG8010 ASIC chip for SPWM generation.
-                    </p>
-
-                    <div class="flex flex-wrap gap-2 mb-6 mt-auto">
-                        <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2.5 py-1 rounded">Altium</span>
-                        <span class="bg-slate-800 text-slate-300 text-xs font-mono px-2.5 py-1 rounded">Power Electronics</span>
-                    </div>
-
-                    <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 text-sm">
-                        <a href="https://github.com/rahulbalakumar/Pure-Sine-Wave-Inverter" target="_blank" class="text-sky-400 font-semibold hover:underline">Schematic &rarr;</a>
-                        <span class="text-slate-500 text-xs">Fabricated</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-  <!-- Ongoing Projects Section -->
-    <section id="ongoing" class="max-w-4xl mx-auto px-6 py-20 border-t border-slate-800">
-        <h2 class="text-2xl font-bold mb-8 border-l-4 border-yellow-500 pl-3">Ongoing Projects</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <!-- Ongoing Project Card 1 -->
-            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-semibold">Smart Digital Power Analyzer</h3>
-                    <span class="bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
-                </div>
-                <p class="text-slate-400 text-sm mb-4 leading-relaxed">Designing an embedded power analyzer with an isolated Analog Front-End
-(AFE) and real-time DSP firmware.</p>
-                
-                <!-- Cool Progress Bar -->
-                <div class="mb-6">
-                    <div class="flex justify-between text-xs text-slate-500 mb-1">
-                        <span>Circuit Designing</span>
-                        <span>10%</span>
-                    </div>
-                    <div class="w-full bg-slate-800 rounded-full h-1.5">
-                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 10%"></div>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">Power Electronics</span>
-                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">Embedded Systems</span>
-                </div>
-                
-                
-            </div>
-            <!-- Ongoing Project Card 2 -->
-            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-semibold">CNN Accelerator with RISC-V SoC Integration</h3>
-                    <span class="bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
-                </div>
-                <p class="text-slate-400 text-sm mb-4 leading-relaxed">3-member team project: FPGA-based CNN inference accelerator integrated as a memory-mapped peripheral with a RISC-V soft-core. Own the Dataflow & Memory pillar (line buffers, sliding window, padding).</p>
-                
-                <!-- Cool Progress Bar -->
-                <div class="mb-6">
-                    <div class="flex justify-between text-xs text-slate-500 mb-1">
-                        <span>Core components built &amp; verified</span>
-                        <span>25%</span>
-                    </div>
-                    <div class="w-full bg-slate-800 rounded-full h-1.5">
-                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 25%"></div>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
-                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">Digital System Design</span>
-                </div>
-                
-                
-            </div>
-
-            <!-- Ongoing Project Card 3 -->
-            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all">
-                <div class="flex justify-between items-start mb-2">
-                    <h3 class="text-xl font-semibold">RISC-V RV32I Single-Cycle CPU</h3>
-                    <span class="bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
-                </div>
-                <p class="text-slate-400 text-sm mb-4 leading-relaxed">Building a single-cycle RV32I base-ISA CPU in SystemVerilog module by module, each with its own self-checking testbench. PC, Instruction Memory, Register File, Immediate Generator, Control Unit, ALU Control, ALU, Operand Mux and Branch Unit (PC control) are complete and verified.</p>
-                
-                <!-- Cool Progress Bar -->
-                <div class="mb-6">
-                    <div class="flex justify-between text-xs text-slate-500 mb-1">
-                        <span>Building Data Memory next</span>
-                        <span>~80%</span>
-                    </div>
-                    <div class="w-full bg-slate-800 rounded-full h-1.5">
-                        <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 80%"></div>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
-                    <span class="bg-slate-800 text-slate-400 text-xs font-mono px-2.5 py-1 rounded">CPU Design</span>
-                </div>
-                
-                
-            </div>
-
-            <!-- Ongoing Project Card 4 (Empty template for later) -->
-            <div class="bg-slate-900/50 p-6 rounded-xl border border-dashed border-slate-700 hover:border-yellow-500 transition-all flex flex-col justify-center items-center text-center">
-                <svg class="w-8 h-8 text-slate-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                </svg>
-                <h3 class="text-lg font-semibold text-slate-500">Next Big Thing</h3>
-                <p class="text-slate-600 text-sm mt-1">Brainstorming new hardware architecture...</p>
-            </div>
-
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="max-w-2xl mx-auto px-6 py-20 border-t border-slate-800 text-center">
-        <h2 class="text-2xl font-bold mb-4 border-l-4 border-sky-400 pl-3 inline-block">Say Hi!</h2>
-        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
-            Interested in collaborating, discussing electronics and exploring new challenges? Feel free to drop me a message.
+  <main>
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-800">
+      <p class="font-mono text-xs text-sky-400 mb-2">// 01 · about</p>
+      <h2 class="text-2xl font-bold mb-6">Focus</h2>
+      <div class="space-y-4 text-slate-300 leading-relaxed">
+        <p>
+          I'm an Electronic &amp; Telecommunication Engineering undergraduate at the University of Moratuwa, focused on
+          <span class="text-sky-400">digital IC design and verification</span>. I write synthesizable SystemVerilog, from
+          arithmetic IP and a RISC-V CPU to a CNN accelerator, and build self-checking testbenches to verify it.
         </p>
-        
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <!-- Email Button -->
-            <a href="mailto:rahulbalakumar61@gmail.com" class="w-full sm:w-auto bg-sky-400 text-slate-950 font-semibold px-6 py-3 rounded-lg hover:bg-sky-300 transition-colors">
-                Email Me
-            </a>
-            
-            <!-- GitHub Profile Button -->
-            <a href="https://github.com/rahulbalakumar" target="_blank" class="w-full sm:w-auto border border-slate-700 text-slate-300 font-semibold px-6 py-3 rounded-lg hover:bg-slate-800 transition-colors">
-                GitHub Profile &rarr;
-            </a>
-        </div>
+        <p>
+          I'm currently an Engineering Intern in Hardware Acceleration at LSEG. Alongside the digital work I'm learning
+          <span class="text-sky-400">analog IC design</span> with Cadence and the open-source IIC-OSIC-TOOLS flow. I started out designing multi-layer PCBs,
+          so I'm comfortable on both sides of the chip boundary.
+        </p>
+      </div>
     </section>
-    </body>
-    </html>
-  <!-- Image Lightbox Modal -->
-    <div id="lightbox" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden items-center justify-center p-4 cursor-zoom-out">
-        <div class="relative max-w-5xl max-h-[90vh] overflow-hidden" onclick="event.stopPropagation()">
-            <img id="lightbox-img" src="" alt="Enlarged PCB View" class="max-w-full max-h-[85vh] object-contain rounded-lg border border-slate-800 shadow-2xl">
-            <p id="lightbox-caption" class="text-center text-slate-400 text-xs font-mono mt-3"></p>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-800">
+      <p class="font-mono text-xs text-sky-400 mb-2">// 02 · experience</p>
+      <h2 class="text-2xl font-bold mb-10">Experience</h2>
+      <div class="border-l border-slate-800 ml-3 pl-6">
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-emerald-400 rounded-full border-4 border-slate-950"></div>
+          <span class="text-xs font-mono text-emerald-400">Present</span>
+          <h3 class="text-xl font-semibold mt-1">Engineering Intern, Hardware Acceleration</h3>
+          <p class="text-slate-300 font-medium">LSEG (London Stock Exchange Group)</p>
+          <p class="text-slate-500 text-sm">Malabe, Sri Lanka</p>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="max-w-3xl mx-auto px-6 py-20 border-t border-slate-800">
+      <p class="font-mono text-xs text-sky-400 mb-2">// 03 · education</p>
+      <h2 class="text-2xl font-bold mb-10">Education</h2>
+
+      <div class="border-l border-slate-800 ml-3 pl-6 space-y-10">
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-sky-400 rounded-full border-4 border-slate-950"></div>
+          <span class="text-xs font-mono text-sky-400">Present</span>
+          <h3 class="text-xl font-semibold mt-1">B.Sc. Engineering (Hons) Undergraduate</h3>
+          <p class="text-slate-300 font-medium">Department of Electronic &amp; Telecommunication Engineering (ENTC)</p>
+          <p class="text-slate-500 text-sm">University of Moratuwa, Sri Lanka</p>
+          <p class="text-slate-300 text-sm mt-3"><span class="text-sky-400 font-semibold">CGPA 3.93 / 4.00</span> &middot; Dean's List in all completed semesters</p>
+
+          <p class="text-xs font-mono text-slate-500 mt-5 mb-2">Relevant coursework</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Digital System Design</span>
+            <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Fundamentals of Computer Organization &amp; Design</span>
+            <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Analog Circuit Design</span>
+            <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Electronic Circuit Design</span>
+            <span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded">Internet of Things</span>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-slate-700 rounded-full border-4 border-slate-950"></div>
+          <span class="text-xs font-mono text-slate-500">2009 to 2022</span>
+          <h3 class="text-xl font-semibold mt-1">G.C.E. Advanced Level</h3>
+          <p class="text-slate-300 font-medium">T/R.K.M Sri Koneswara Hindu College</p>
+          <p class="text-slate-400 text-sm mt-2">4 A's · 89th in the country · Z-score 2.69</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-20 border-t border-slate-800">
+      <p class="font-mono text-xs text-sky-400 mb-2">// 04 · projects</p>
+      <h2 class="text-2xl font-bold mb-2">RTL Design &amp; Verification</h2>
+      <p class="text-slate-400 text-sm mb-10">Synthesizable SystemVerilog/Verilog, each block verified with its own testbench.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- RV32I -->
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">RISC-V RV32I Single-Cycle CPU</h3>
+            <span class="shrink-0 bg-emerald-400/10 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded border border-emerald-400/20">Verified</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-5 leading-relaxed">
+            A complete single-cycle RV32I datapath (R/I-type, LW, SW, BEQ/BNE, JAL, JALR) built from 11 modules, each with its own
+            directed self-checking testbench. Verified end to end with a hand-assembled integration program that exercises every
+            instruction type, including branch and jump paths: 8/8 checks pass.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-5 mt-auto">
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">RISC-V</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">CPU Design</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Self-checking TB</span>
+          </div>
+          <a href="https://github.com/rahulbalakumar/RISC-V-Single-Cycle-CPU" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+        </article>
+
+        <!-- CNN accelerator -->
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">CNN Accelerator with RISC-V SoC Integration</h3>
+            <span class="shrink-0 bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-5 leading-relaxed">
+            Three-person team project: an MNIST digit classifier on a Cyclone IV FPGA, with a CNN accelerator (conv 3&times;3 &rarr; ReLU
+            &rarr; max pool &rarr; dense &rarr; argmax) controlled by a PicoRV32 soft core. I own dataflow &amp; memory: a BRAM line-buffer
+            3&times;3 sliding window with an AXI-Stream interface, safe under backpressure, verified with directed and constrained-random
+            stall testbenches.
+          </p>
+          <div class="mb-5">
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>Blocks built &middot; SoC integration next</span><span>~60%</span></div>
+            <div class="w-full bg-slate-800 rounded-full h-1.5"><div class="bg-yellow-500 h-1.5 rounded-full" style="width: 60%"></div></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5 mt-auto">
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">AXI-Stream</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Constrained-random</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Xcelium</span>
+          </div>
+          <a href="https://github.com/rahulbalakumar/CNN-Accelerator-with-RISC-V-SoC-Integration" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+        </article>
+
+        <!-- Arithmetic IPs -->
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">Parameterized Arithmetic IP Library</h3>
+            <span class="shrink-0 bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-3 leading-relaxed">
+            Configurable 8&ndash;128-bit integer arithmetic cores, each with one variant tuned for latency and one for logic cost:
+          </p>
+          <ul class="text-slate-400 text-sm mb-5 space-y-1 list-disc list-inside">
+            <li>Radix-4 Booth multiplier with a recursive Wallace (3:2) tree</li>
+            <li>Shift-and-add multiplier (cost-optimized)</li>
+            <li>Radix-2 SRT divider (verified at 8 and 128 bits)</li>
+            <li>Restoring divider (verified at 8 and 128 bits)</li>
+            <li>Parameterized N&times;N systolic matrix multiplier (verified at N = 2, 3)</li>
+          </ul>
+          <div class="mb-5">
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>Wider-width &amp; larger-N verification next</span><span>~80%</span></div>
+            <div class="w-full bg-slate-800 rounded-full h-1.5"><div class="bg-yellow-500 h-1.5 rounded-full" style="width: 80%"></div></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5 mt-auto">
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Computer Arithmetic</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Parameterized RTL</span>
+          </div>
+          <a href="https://github.com/rahulbalakumar/Arithmetic-IPs" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+        </article>
+
+        <!-- SPI master -->
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">SPI Master Controller</h3>
+            <span class="shrink-0 bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-5 leading-relaxed">
+            An SPI master (Mode 0) designed FSM-first from the protocol's timing requirements: a Mealy control FSM, a programmable
+            SCLK generator and a bidirectional shift register, each with its own testbench.
+          </p>
+          <div class="mb-5">
+            <div class="flex justify-between text-xs text-slate-500 mb-1"><span>End-to-end fake-slave testbench next</span><span>~70%</span></div>
+            <div class="w-full bg-slate-800 rounded-full h-1.5"><div class="bg-yellow-500 h-1.5 rounded-full" style="width: 70%"></div></div>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-5 mt-auto">
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">FSM Design</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SPI</span>
+          </div>
+          <a href="https://github.com/rahulbalakumar/serial-protocol-fsms" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+        </article>
+
+        <!-- UART -->
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">FPGA UART Transceiver with AXI4-Stream</h3>
+            <span class="shrink-0 bg-emerald-400/10 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded border border-emerald-400/20">On FPGA</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-5 leading-relaxed">
+            UART transceiver with an AXI4-Stream interface, 8&times; oversampling for noise immunity and frame/overrun error detection.
+            Simulated in Icarus Verilog and deployed on a DE0-Nano (Cyclone IV) with 7-segment output.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-5 mt-auto">
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Verilog</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">AXI4-Stream</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Quartus Prime</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Icarus Verilog</span>
+          </div>
+          <a href="https://github.com/rahulbalakumar/fpga-uart-verilog" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+        </article>
+
+        <!-- Single bus CPU -->
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-sky-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">16-bit Single-Bus CPU</h3>
+            <span class="shrink-0 bg-emerald-400/10 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded border border-emerald-400/20">Verified</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-5 leading-relaxed">
+            A 16-bit multi-cycle, single-bus RISC CPU with a 12-state control FSM. Verified with an OOP-based constrained-random
+            testbench and scoreboard over 50+ randomized iterations.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-5 mt-auto">
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">SystemVerilog</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Constrained-random</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">Scoreboard</span>
+            <span class="bg-slate-800 text-sky-400 text-xs font-mono px-2.5 py-1 rounded">CPU Design</span>
+          </div>
+          <a href="https://github.com/rahulbalakumar/Single-Bus-Architecture-CPU" target="_blank" class="text-sky-400 font-semibold text-sm hover:underline">GitHub Repository &rarr;</a>
+        </article>
+      </div>
+
+      <!-- Analog IC track -->
+      <h3 class="text-lg font-bold mt-16 mb-2">Analog IC Design</h3>
+      <p class="text-slate-400 text-sm mb-6">A second track I'm building alongside the digital work.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-violet-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">Bandgap Voltage Reference</h3>
+            <span class="shrink-0 bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-5 leading-relaxed">
+            Learning the Cadence custom IC flow (schematic capture and simulation) by designing a bandgap voltage reference.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="bg-slate-800 text-violet-300 text-xs font-mono px-2.5 py-1 rounded">Cadence Virtuoso</span>
+            <span class="bg-slate-800 text-violet-300 text-xs font-mono px-2.5 py-1 rounded">Analog IC Design</span>
+          </div>
+        </article>
+        <article class="bg-slate-900 p-6 rounded-xl border border-slate-800 hover:border-violet-400 transition-all hover:-translate-y-1 flex flex-col">
+          <div class="flex justify-between items-start gap-3 mb-2">
+            <h3 class="text-xl font-semibold">Open-Source Transistor-Level Flow</h3>
+            <span class="shrink-0 bg-yellow-500/10 text-yellow-500 text-xs font-bold px-2 py-0.5 rounded border border-yellow-500/20">WIP</span>
+          </div>
+          <p class="text-slate-400 text-sm mb-5 leading-relaxed">
+            Learning transistor-level design with the open-source IIC-OSIC-TOOLS flow (schematic capture and SPICE simulation),
+            starting with CMOS inverter design.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="bg-slate-800 text-violet-300 text-xs font-mono px-2.5 py-1 rounded">IIC-OSIC-TOOLS</span>
+            <span class="bg-slate-800 text-violet-300 text-xs font-mono px-2.5 py-1 rounded">SPICE</span>
+            <span class="bg-slate-800 text-violet-300 text-xs font-mono px-2.5 py-1 rounded">CMOS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-20 border-t border-slate-800">
+      <p class="font-mono text-xs text-sky-400 mb-2">// 05 · skills</p>
+      <h2 class="text-2xl font-bold mb-10">Skills &amp; Toolchain</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-mono text-sm text-sky-400 mb-4">RTL Design</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>SystemVerilog, Verilog</li>
+            <li>CPU datapath &amp; control (RV32I)</li>
+            <li>Computer arithmetic: Booth/Wallace, SRT division, systolic arrays</li>
+            <li>AXI4-Stream, memory-mapped peripherals, SPI, UART</li>
+            <li>FSMs, line buffers, streaming dataflow</li>
+          </ul>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-mono text-sm text-sky-400 mb-4">Verification</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>Self-checking SystemVerilog testbenches</li>
+            <li>Constrained-random stimulus, OOP testbenches with scoreboarding</li>
+            <li>UVM</li>
+            <li>SystemVerilog Assertions (SVA)</li>
+            <li>Functional coverage</li>
+          </ul>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-mono text-sm text-sky-400 mb-4">EDA &amp; FPGA</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>Cadence Xcelium, Cadence Virtuoso</li>
+            <li>IIC-OSIC-TOOLS (open-source analog flow)</li>
+            <li>Intel Quartus Prime, ModelSim, Icarus Verilog</li>
+            <li>Cyclone IV FPGAs (DE0-Nano, DE2-115)</li>
+            <li>PicoRV32 SoC integration</li>
+          </ul>
+        </div>
+        <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6">
+          <h3 class="font-mono text-sm text-slate-400 mb-4">Board-level &amp; Analog</h3>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li>Altium Designer (multi-layer PCBs)</li>
+            <li>LTspice</li>
+            <li>SOLIDWORKS</li>
+            <li>Power &amp; analog electronics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OTHER HARDWARE ============ -->
+    <section id="hardware" class="max-w-5xl mx-auto px-6 py-20 border-t border-slate-800">
+      <p class="font-mono text-xs text-slate-500 mb-2">// 06 · other hardware</p>
+      <h2 class="text-2xl font-bold mb-2">Board-Level &amp; Power Electronics</h2>
+      <p class="text-slate-400 text-sm mb-10">Where I started: custom PCBs designed in Altium, simulated in LTspice and fabricated. Click an image to enlarge it.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <article class="bg-slate-900/50 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-600 transition-all flex flex-col">
+          <div class="grid grid-cols-2 gap-1 h-36 bg-slate-950">
+            <img src="./src/images/controller3D.png" alt="Inverter controller: 3D render" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover">
+            <img src="./src/images/controller2D.png" alt="Inverter controller: layout" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <h3 class="font-semibold">300W Pure Sine Wave Inverter</h3>
+              <span class="shrink-0 text-slate-400 text-[10px] font-mono px-1.5 py-0.5 rounded border border-slate-700">2&times; 2-layer</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">EG8010-based SPWM controller and power stage on two separate boards, in a custom metal enclosure.</p>
+            <div class="flex items-center justify-between mt-auto pt-3 border-t border-slate-800 text-sm">
+              <a href="https://github.com/rahulbalakumar/Pure-Sine-Wave-Inverter" target="_blank" class="text-sky-400 font-semibold hover:underline">GitHub &rarr;</a>
+              <span class="text-slate-500 text-xs">Fabricated</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-slate-900/50 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-600 transition-all flex flex-col">
+          <div class="grid grid-cols-2 gap-1 h-36 bg-slate-950">
+            <img src="./src/images/solar3D.png" alt="Analog solar tracker: 3D render" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover">
+            <img src="./src/images/solar2D.png" alt="Analog solar tracker: layout" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <h3 class="font-semibold">Analog Solar Tracker</h3>
+              <span class="shrink-0 text-slate-400 text-[10px] font-mono px-1.5 py-0.5 rounded border border-slate-700">4-layer</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">Fully analog PID tracker (op-amps and transistors only, no digital parts) with a custom enclosure.</p>
+            <div class="flex items-center justify-between mt-auto pt-3 border-t border-slate-800 text-sm">
+              <a href="https://github.com/rahulbalakumar/Analog-Solar-Tracker" target="_blank" class="text-sky-400 font-semibold hover:underline">GitHub &rarr;</a>
+              <span class="text-slate-500 text-xs">Fabricated</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-slate-900/50 rounded-xl border border-slate-800 overflow-hidden hover:border-slate-600 transition-all flex flex-col">
+          <div class="grid grid-cols-2 gap-1 h-36 bg-slate-950">
+            <img src="./src/images/classd3D.png" alt="Class D amplifier: 3D render" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover">
+            <img src="./src/images/classd2D.png" alt="Class D amplifier: layout" class="pcb-zoom-img cursor-zoom-in w-full h-full object-cover">
+          </div>
+          <div class="p-5 flex flex-col flex-grow">
+            <div class="flex justify-between items-start gap-2 mb-2">
+              <h3 class="font-semibold">Class D Audio Amplifier</h3>
+              <span class="shrink-0 text-slate-400 text-[10px] font-mono px-1.5 py-0.5 rounded border border-slate-700">2-layer</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4 leading-relaxed">High-efficiency amplifier with tone control, a high-frequency PWM stage and a custom gate driver.</p>
+            <div class="flex items-center justify-between mt-auto pt-3 border-t border-slate-800 text-sm">
+              <a href="https://github.com/rahulbalakumar/class-d-audio-amplifier" target="_blank" class="text-sky-400 font-semibold hover:underline">GitHub &rarr;</a>
+              <span class="text-slate-500 text-xs">In fabrication</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-6 bg-slate-900/40 border border-dashed border-slate-700 rounded-xl px-5 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <h3 class="font-semibold text-sm">Smart Digital Power Analyzer <span class="ml-2 text-yellow-500 text-xs font-bold">WIP</span></h3>
+          <p class="text-slate-400 text-sm">Embedded power analyzer with an isolated analog front end and real-time DSP firmware.</p>
+        </div>
+        <span class="text-slate-500 text-xs font-mono shrink-0">circuit design · 10%</span>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="max-w-2xl mx-auto px-6 py-20 border-t border-slate-800 text-center">
+      <p class="font-mono text-xs text-sky-400 mb-2">// 07 · contact</p>
+      <h2 class="text-2xl font-bold mb-4">Say hi</h2>
+      <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+        Happy to talk about RTL design, verification, computer architecture or analog IC design.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <a href="mailto:rahulbalakumar61@gmail.com" class="w-full sm:w-auto bg-sky-400 text-slate-950 font-semibold px-6 py-3 rounded-lg hover:bg-sky-300 transition-colors">Email Me</a>
+        <a href="https://www.linkedin.com/in/rahul-balakumar19/" target="_blank" class="w-full sm:w-auto border border-slate-700 text-slate-300 font-semibold px-6 py-3 rounded-lg hover:bg-slate-800 transition-colors">LinkedIn &rarr;</a>
+        <a href="https://github.com/rahulbalakumar" target="_blank" class="w-full sm:w-auto border border-slate-700 text-slate-300 font-semibold px-6 py-3 rounded-lg hover:bg-slate-800 transition-colors">GitHub &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8 text-center font-mono text-xs text-slate-600">
+    endmodule // &copy; 2026 Rahul Balakumar
+  </footer>
+
+  <!-- Image lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden items-center justify-center p-4 cursor-zoom-out">
+    <div class="relative max-w-5xl max-h-[90vh] overflow-hidden">
+      <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[85vh] object-contain rounded-lg border border-slate-800 shadow-2xl">
+      <p id="lightbox-caption" class="text-center text-slate-400 text-xs font-mono mt-3"></p>
     </div>
+  </div>
 
-    <!-- Lightbox Script -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            const lightboxCaption = document.getElementById('lightbox-caption');
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      const setMenu = (open) => {
+        menu.classList.toggle("hidden", !open);
+        menuBtn.setAttribute("aria-expanded", String(open));
+      };
+      menuBtn.addEventListener("click", () => setMenu(menu.classList.contains("hidden")));
+      menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
 
-            // Find all images with the zoom class
-            const zoomImages = document.querySelectorAll('.pcb-zoom-img');
+      // Lightbox
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCaption = document.getElementById("lightbox-caption");
+      const close = () => { lightbox.classList.add("hidden"); lightbox.classList.remove("flex"); };
 
-            zoomImages.forEach(img => {
-                img.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    lightboxImg.src = img.src;
-                    lightboxCaption.textContent = img.alt;
-                    lightbox.classList.remove('hidden');
-                    lightbox.classList.add('flex');
-                });
-            });
-
-            // Close lightbox when clicking outside the image
-            lightbox.addEventListener('click', () => {
-                lightbox.classList.remove('flex');
-                lightbox.classList.add('hidden');
-            });
+      document.querySelectorAll(".pcb-zoom-img").forEach((img) => {
+        img.addEventListener("click", () => {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightboxCaption.textContent = img.alt;
+          lightbox.classList.remove("hidden");
+          lightbox.classList.add("flex");
         });
-    </script>
-
-  </body>
+      });
+      lightbox.addEventListener("click", close);
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+    });
+  </script>
+</body>
 </html>
